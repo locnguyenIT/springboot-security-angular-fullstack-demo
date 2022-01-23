@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: white;" routerLink="/menu/student">Student</a>
+      <a class="navbar-brand" style="color: white;" routerLink="/menu/user">User</a>
+      <a class="navbar-brand" style="color: white;" >Welcome</a>
+      <a class="navbar-brand" style="color: white;" >{{user?.name}}</a>
+      <a class="navbar-brand" style="color: white;" (click)="signOut()">Sign Out</a>
+      <form class="d-flex">
+        <!-- use (ngModelChange) to listen everytime input something change in search -->
+        <!-- <input class="form-control me-2" type="search" (ngModelChange)="searchStudent(input.value)" #input ="ngModel"
+          ngModel name="input" placeholder="Search..." aria-label="Search"> -->
+      </form>
+    </div>
+</nav>
+<router-outlet></router-outlet>
