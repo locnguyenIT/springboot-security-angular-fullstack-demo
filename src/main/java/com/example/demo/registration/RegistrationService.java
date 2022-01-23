@@ -42,11 +42,9 @@ public class RegistrationService {
 
         String encodedPassword = bCryptPasswordEncoder.encode(request.getPassword()); //encode password of user
 
-        request.setPassword(encodedPassword);
-
         Role role = roleRepository.findByName(USER);
 
-        User user = new User(request.getName(),request.getEmail(),request.getPassword(),true,role);
+        User user = new User(request.getName(),request.getEmail(),encodedPassword,true,role);
 
         userRepository.save(user);
 
