@@ -20,8 +20,10 @@ To run the project, make sure you have installed
 - MySQL database
 
 First, open the project and follow path "\src\main\resources\application.properties" to configuation application.properties to connect database.
-
 ![Screenshot 2022-01-23 185448](https://user-images.githubusercontent.com/86077654/150677128-4d0ab4f2-22d4-4304-9ba4-22bc3c4a72dc.png)
+
+Second, open MailService class change setFrom("your-email")
+![Screenshot 2022-01-23 191107](https://user-images.githubusercontent.com/86077654/150677727-e060deff-6de0-498a-a468-5546e512da68.png)
 
 Make sure you created database "student" and change username, password with your MySQL account. Next change you google account to send email if user request to reset password.
 
