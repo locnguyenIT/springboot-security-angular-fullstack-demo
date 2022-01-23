@@ -25,6 +25,9 @@ First, open the project and follow path "\src\main\resources\application.propert
 Second, open MailService class change setFrom("your-email")
 ![Screenshot 2022-01-23 191107](https://user-images.githubusercontent.com/86077654/150677727-e060deff-6de0-498a-a468-5546e512da68.png)
 
+Finally, open google account and turn on App access is less secure
+![Screenshot 2022-01-23 192124](https://user-images.githubusercontent.com/86077654/150678219-20eddd2e-9379-4c9d-9750-426f3f038a73.png)
+
 Make sure you created database "student" and change username, password with your MySQL account. Next change you google account to send email if user request to reset password.
 
 Second, run command "mvn clean package" to install NodeJS, NPM and package backend, frontend into a single jar.
